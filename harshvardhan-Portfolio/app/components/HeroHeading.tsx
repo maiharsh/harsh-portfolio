@@ -42,7 +42,7 @@ export default function Heroheading() {
                 <Image
                   key={i}
                   src={img}
-                  alt="Portrait of Rhythm Doshi"
+                  alt="Portrait of harshvardhan"
                   fill
                   className={`
                     object-cover absolute inset-0
