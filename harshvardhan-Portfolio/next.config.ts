@@ -1,21 +1,11 @@
 import type { NextConfig } from "next";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const nextConfig: NextConfig = {
   devIndicators: false,
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "www.rhythmdoshi.site",
-          },
-        ],
-        destination: "https://rhythmdoshi.site/:path*",
-        permanent: true,
-      },
-    ];
+  turbopack: {
+    root: path.dirname(fileURLToPath(import.meta.url)),
   },
 };
 

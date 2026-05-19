@@ -3,9 +3,12 @@ import "./globals.css";
 import Navbar from "./components/layout/Navbar";
 import ThemeToggle from "./components/ThemeToggle";
 import { Analytics } from "@vercel/analytics/next";
+import { getSiteUrl } from "@/lib/site";
+
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rhythmdoshi.site"),
+  metadataBase: new URL(siteUrl),
   alternates: {
     canonical: "/",
   },
@@ -32,11 +35,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Harshvardhan — I Build Things for the Web",
     description: "Full Stack Engineer building modern web applications.",
-    url: "https://rhythmdoshi.site",
+    url: siteUrl,
     siteName: "Harshvardhan",
     images: [
       {
-        url: "https://rhythmdoshi.site/meta/og-image.png",
+        url: "/meta/og-image.png",
         width: 1200,
         height: 630,
       },
@@ -48,7 +51,7 @@ export const metadata: Metadata = {
     title: "Harshvardhan — I Build Things for the Web",
     description:
       "Full Stack Engineer building modern web applications. Explore my projects, stack, and experience in React, Next.js, Node.js and more.",
-    images: ["https://rhythmdoshi.site/meta/twitter-image.png"], // absolute URL
+    images: ["/meta/twitter-image.png"],
   },
   manifest: "/meta/site.webmanifest",
 };
@@ -79,6 +82,7 @@ export default function RootLayout({
         <Navbar />
         <ThemeToggle />
         {children}
+        <Analytics />
       </body>
     </html>
   );

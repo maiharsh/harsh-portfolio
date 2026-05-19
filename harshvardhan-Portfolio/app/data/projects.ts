@@ -82,7 +82,7 @@ export const projects: ProjectData[] = [
       "Feature 1: TBA",
     ],
     links: {
-      github: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      github: "https://github.com/maiharsh",
     },
   },
 ];

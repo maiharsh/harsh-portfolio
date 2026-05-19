@@ -19,7 +19,7 @@ export type ProjectData = {
   filler: string;
   features: string[];
   links: {
-    live: string;
-    github: string;
+    live?: string;
+    github?: string;
   };
 };

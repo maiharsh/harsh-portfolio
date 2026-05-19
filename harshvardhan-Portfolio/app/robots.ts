@@ -1,11 +1,14 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next";
+import { getSiteUrl } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
+  const siteUrl = getSiteUrl();
+
   return {
     rules: {
-      userAgent: '*',
-      disallow: '',
+      userAgent: "*",
+      allow: "/",
     },
-    sitemap: 'https://rhythmdoshi.site/sitemap.xml',
-  }
+    sitemap: `${siteUrl}/sitemap.xml`,
+  };
 }
