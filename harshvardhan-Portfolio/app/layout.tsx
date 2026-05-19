@@ -3,9 +3,8 @@ import "./globals.css";
 import Navbar from "./components/layout/Navbar";
 import ThemeToggle from "./components/ThemeToggle";
 import { Analytics } from "@vercel/analytics/next";
-import { getSiteUrl } from "@/lib/site";
 
-const siteUrl = getSiteUrl();
+const siteUrl = "https://harshvardhan.xyz";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
