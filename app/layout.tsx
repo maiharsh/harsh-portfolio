@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Harshvardhan",
     images: [
       {
-        url: "/meta/og-profile_photo.jpg",
+        url: "/meta/og-profile_photo.png",
         width: 1200,
         height: 630,
       },
