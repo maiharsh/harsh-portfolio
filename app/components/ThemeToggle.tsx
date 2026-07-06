@@ -11,6 +11,8 @@ const ThemeToggle = () => {
   const mouse = useRef<MouseState>({ x: 0, y: 0, down: false, target: null});
 
   useEffect(() => {
+    document.documentElement.classList.add("dark");
+
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
