@@ -29,44 +29,39 @@ export default function Heroheading() {
   return (
     <div className="innerContainer">
       <div className="h-[17vh] sm:h-[20vh] md:h-[24vh] lg:h-[24vh] w-full flex items-center justify-start">
-        
+
         <div
           id="imageDiv"
           className="h-full aspect-square bg1 border-r flex items-center justify-center"
         >
-          <div className="relative size-[100%] rounded-full border p-[2px] sm:p-[3px] hover:p-0 transition-all duration-300 ease-in-out">
-            
+          <div className="relative size-full rounded-full border p-[2px] sm:p-[3px] hover:p-0 transition-all duration-300 ease-in-out">
             <div className="relative w-full h-full rounded-full overflow-hidden">
-              
               {images.map((img, i) => (
                 <Image
                   key={i}
                   src={img}
-                  alt="Portrait of harshvardhan"
+                  alt="Portrait of Harshvardhan"
                   fill
-                  className={`
-                    object-cover absolute inset-0
-                    transition-all duration-1000 ease-in-out
-                    ${i === index ? "opacity-100 scale-100" : "opacity-0 scale-110"}
-                  `}
+                  className={`object-cover absolute inset-0 transition-all duration-1000 ease-in-out ${
+                    i === index
+                      ? "opacity-100 scale-100"
+                      : "opacity-0 scale-110"
+                  }`}
                   priority={index === 0}
                   fetchPriority={index === 0 ? "high" : "auto"}
                 />
               ))}
-
             </div>
-
           </div>
         </div>
 
         <div id="infoDiv" className="h-full flex-1">
-          <div className="h-[50%] md:h-[55%] border-b flex items-end px-2 pb-[1px] gap-2 font2 tracking-tighter text-[9px] sm:text-[10px] md:text-xs text-zinc-3di00">
-            <span className="inline">text</span>
-            <span className="inline">text-zinc-50</span>
-            <span className="inline">font-medium</span>
-          </div>
 
-          <div className="h-[25%] border-b flex items-center px-2 gap-1.5 sm:gap-2">
+          {/* Empty top area */}
+          <div className="h-[40%] md:h-[45%] border-b"></div>
+
+          {/* Name */}
+          <div className="h-[35%] border-b flex items-center px-2 gap-1.5 sm:gap-2">
             <h1 className="font2 text-lg sm:text-xl md:text-2xl lg:text-3xl text1">
               Harshvardhan
             </h1>
@@ -85,9 +80,11 @@ export default function Heroheading() {
             </svg>
           </div>
 
+          {/* Rotating text */}
           <div className="h-[25%] md:h-[20%] px-2 flex items-center font1 tracking-tighter text-xs sm:text-sm">
             <RotatingText texts={texts} />
           </div>
+
         </div>
 
       </div>
