@@ -25,47 +25,60 @@ export default function ProjectsSection() {
     <div>
       <Heading name="Projects" />
 
-      <div className="w-full border-b">
+      {/* Description */}
+      <div className="w-full border-b border-[#FD3DB5]">
         <div className="innerContainer h-fit py-4 flex items-center justify-start px-4 font1 tracking-tighter text2 text-sm">
-          <h3>A collection of projects I’ve worked on and contributed to.</h3>
+          <h3>
+            A collection of projects I’ve worked on and contributed to.
+          </h3>
         </div>
       </div>
 
       <ProjectLines />
 
-      <div className="hidden sm:block w-full border-b h-fit">
+      {/* Desktop - Row 1 */}
+      <div className="hidden sm:block w-full border-b border-[#FD3DB5] h-fit">
         <Projects projectData={row1} />
       </div>
 
+      {/* Mobile - Row 1 */}
       <div className="sm:hidden">
-        <div className="w-full border-b h-fit">
+        <div className="w-full border-b border-[#FD3DB5] h-fit">
           <Projects projectData={[row1[0]]} />
         </div>
+
         <ProjectLines />
-        <div className="w-full border-b h-fit">
+
+        <div className="w-full border-b border-[#FD3DB5] h-fit">
           <Projects projectData={[row1[1]]} />
         </div>
       </div>
 
       <ProjectLines />
 
-      <div className="hidden sm:block w-full border-b h-fit">
+      {/* Desktop - Row 2 */}
+      <div className="hidden sm:block w-full border-b border-[#FD3DB5] h-fit">
         <Projects projectData={row2} />
       </div>
+
+      {/* Mobile - Row 2 */}
       <div className="sm:hidden">
-        <div className="w-full border-b h-fit">
+        <div className="w-full border-b border-[#FD3DB5] h-fit">
           <Projects projectData={[row2[0]]} />
         </div>
+
         <ProjectLines />
-        <div className="w-full border-b h-fit">
+
+        <div className="w-full border-b border-[#FD3DB5] h-fit">
           <Projects projectData={[row2[1]]} />
         </div>
       </div>
 
-      <div className="w-full border-b">
+      {/* Footer */}
+      <div className="w-full border-b border-[#FD3DB5]">
         <div className="innerContainer h-5 flex items-center justify-end px-4 py-3">
           <h5 className="text-sm text1 font2 tracking-tighter underline flex items-center gap-1 hover:!text-zinc-700 transition ease-in">
-            <Link href={"https://github.com/maiharsh?tab=repositories"}>
+            <Link href="https://github.com/maiharsh?tab=repositories">
               More Projects on Github
             </Link>
             <ArrowUpRight size={14} />

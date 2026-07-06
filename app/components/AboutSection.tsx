@@ -54,7 +54,7 @@ export default function AboutSection() {
                       href={"https://leetcode.com/u/harshvardhan018/"}
                       className="text1"
                     >
-                      100+ DSA problems
+                      200+ DSA problems
                     </Link>
                   </span>{" "}
                   (and counting, because it&apos;s fun)
