@@ -12,7 +12,7 @@ export default function Heroheading() {
   ];
 
   const images = [
-    "/images/image.png",
+    "/images/profile_photo.png",
     "/images/images.png",
   ];
 
