@@ -20,7 +20,7 @@ export default function SocialLinks () {
             <ArrowUpRight className="w-4 h-4 text-zinc-600 dark:text-zinc-400 group-hover:rotate-45 transition ease-in-out" />
           </a>
 
-          <a target="_blank" rel="noopener noreferrer" href="https://x.com/maiharshhhh" className="group hover-bg2 transition ease-in flex-1 border-r flex items-center justify-between px-3 pl-4 border-b md:border-b-0">
+          <a target="_blank" rel="noopener noreferrer" href="https://x.com/harshv957" className="group hover-bg2 transition ease-in flex-1 border-r flex items-center justify-between px-3 pl-4 border-b md:border-b-0">
             <div className="flex items-center gap-2">
               <Image src="/images/logo-white.png" alt="" width={24} height={24} className="rounded-md" />
               <h3>X</h3>
