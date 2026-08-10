@@ -70,19 +70,36 @@ export const projects: ProjectData[] = [
     },
   },
   {
-    slug: "UPCOMING",
-    heading: "UPCOMING",
-    subheading: "Will be added soon!",
-    image: "/projects/coming-soon.webp",
-    description:
-      "WORK IN PROGRESS",
-    tech: ["TBA"],
-    filler: "Stay tuned for an exciting new project that I'm currently working on, which will be added to this portfolio soon!",
-    features: [
-      "Feature 1: TBA",
-    ],
-    links: {
-      github: "https://github.com/maiharsh",
-    },
+  slug: "rising-waters",
+  heading: "Rising Waters",
+  subheading: "Accurate flood prediction & early warning system",
+  image: "/projects/floods.png",
+  description:
+    "Rising Waters is a Machine Learning-powered flood prediction system that alerts about flood risk using historical weather parameterss",
+  tech: [
+    "Python",
+    "Flask",
+    "Pandas",
+    "NumPy",
+    "Scikit-learn",
+    "XGBoost",
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+  ],
+  filler:
+    "with a focus on early flood risk assessment, model evaluation, and real-world usability.",
+  features: [
+    "Flood risk prediction based on historical weather parameters",
+    "Compares Decision Tree, Random Forest, KNN, and XGBoost models",
+    "Automatically selects the best-performing classification model",
+    "Provides a confidence score alongside each prediction",
+    "Responsive Flask web application for desktop and mobile",
+    "Deployed as a live web application on Render",
+  ],
+  links: {
+    github: "[https://github.com/maiharsh/Rising_Waters](https://github.com/maiharsh/Rising_Waters)",
+    live: "[https://rising-waters-hrjz.onrender.com/](https://rising-waters-hrjz.onrender.com/)",
   },
+},
 ];
