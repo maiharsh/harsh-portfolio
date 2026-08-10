@@ -66,7 +66,7 @@ export default function InfoBox() {
               <FileText className="size-3.5" />
             </IconBox>
             {}
-            <a href="https://drive.google.com/file/d/1kTDuG1ukIYisbX3d9-mHxryrOV7Fc3Py/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            <a href="https://drive.google.com/file/d/1a23f3fO0FHio4h3KF0g0o7EkW2IS-Qeq/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:underline">
               Resume
             </a>
           </div>
