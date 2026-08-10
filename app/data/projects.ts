@@ -98,7 +98,7 @@ export const projects: ProjectData[] = [
     "Deployed as a live web application on Render",
   ],
   links: {
-    github: "[https://github.com/maiharsh/Rising_Waters](https://github.com/maiharsh/Rising_Waters)",
+    github: "[https://github.com/maiharsh/Rising_Waters]",
     live: "[https://rising-waters-hrjz.onrender.com/](https://rising-waters-hrjz.onrender.com/)",
   },
 },
