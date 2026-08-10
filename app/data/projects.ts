@@ -75,7 +75,7 @@ export const projects: ProjectData[] = [
   subheading: "Accurate flood prediction & early warning system",
   image: "/projects/floods.png",
   description:
-    "Rising Waters is a Machine Learning-powered flood prediction system that alerts about flood risk using historical weather parameterss",
+    "Rising Waters is a Machine Learning-powered flood prediction system that alerts about flood risk using historical weather parameters and evaluates multiple classification models to provide accurate predictions.",
   tech: [
     "Python",
     "Flask",
